@@ -1,0 +1,24 @@
+{
+  "name": "request",
+  "version": "1.0.0",
+  "description": "a simple http request repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asarua/request.git"
+  },
+  "keywords": [
+    "http",
+    "fetch",
+    "ajax"
+  ],
+  "author": "Asarua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Asarua/request/issues"
+  },
+  "homepage": "https://github.com/Asarua/request#readme"
+}

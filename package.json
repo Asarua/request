@@ -1,6 +1,6 @@
 {
   "name": "request",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "a simple http request repository",
   "main": "index.js",
   "scripts": {
@@ -24,8 +24,7 @@
   },
   "config": {
     "ghooks": {
-      "commit-msg": "validate-commit-msg",
-      "post-commit": "npm run shift-commit-message && git add"
+      "commit-msg": "validate-commit-msg"
     },
     "validate-commit-msg": {
       "types": [

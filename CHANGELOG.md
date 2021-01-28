@@ -5,6 +5,7 @@
 
 * **all:** first commit ([cdf3f4c](https://github.com/Asarua/request/commit/cdf3f4c691f99e4c7c1812c960ba622967e7bf90))
 * **all:** 添加ghooks使validate-commit-msg生效 ([e792cd1](https://github.com/Asarua/request/commit/e792cd172b3c3830fb7987444072b4ba37c57e71))
+* **package.json:** 添加自动生成CHANGELOG.md的勾子 ([8a6ac56](https://github.com/Asarua/request/commit/8a6ac5690d76ffad7c80b30e0a0fccd18a85edb2))
 
-a
+
 

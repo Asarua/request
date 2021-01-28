@@ -17,5 +17,27 @@ function createHeader(headers: Headers, methods: RequestMethods = "POST") {
 function createRequest(defaultUrl: string, options: Options) {
   const headers = createHeader(options.headers, options.methods)
   const url = isPost(options.methods) ? defaultUrl : queryString(defaultUrl, options.body)
-  
+
+  return new Request(url, {
+    ...options,
+    headers
+  })
+}
+
+function get(url: string, options: Options & { methods: 'GET' }) {
+  return fetch(
+    createRequest(
+      url,
+      options
+    )
+  )
+}
+
+function post(url, options: Options & { methods: 'POST' }) {
+  return fetch(
+    createRequest(
+      url,
+      options
+    )
+  )
 }

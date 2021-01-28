@@ -9,8 +9,10 @@ export enum RestfulApis {
   PATCH = 'patch'
 }
 
-// 请求的方式
-export type RequestMethods = keyof typeof RestfulApis
+export type UpperCaseMethods = keyof typeof RestfulApis
+export type LowerCaseMethods = Lowercase<UpperCaseMethods>
+
+export type RequestMethods = UpperCaseMethods | LowerCaseMethods
 
 // 请求的时候传递的参数
 export interface Options {

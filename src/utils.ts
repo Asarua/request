@@ -9,10 +9,10 @@ function getConnectChar(url: string) {
   return url.includes('?') ? '&' : '?'
 }
 
-export function queryString(url: string, data: Record<string, string | number>) {
+export function queryString(url: string, data: Record<string, string | number> = {}) {
   return Reflect.ownKeys(data).reduce((url: string, item: string | number) => {
     return `${url}${getConnectChar(url)}${item}=${data[item]}`
-  }, url)
+  }, url) as string
 }
 
 export function isPost(method: RequestMethods) {

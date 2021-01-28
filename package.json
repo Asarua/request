@@ -21,34 +21,8 @@
     "url": "https://github.com/Asarua/request/issues"
   },
   "config": {
-    "validate-commit-msg": {
-      "types": [
-        "feat",
-        "fix",
-        "docs",
-        "style",
-        "refactor",
-        "perf",
-        "test",
-        "build",
-        "ci",
-        "chore",
-        "revert"
-      ],
-      "scope": {
-        "required": false,
-        "allowed": [
-          "*"
-        ],
-        "validate": false,
-        "multiple": false
-      },
-      "warnOnFail": false,
-      "maxSubjectLength": 100,
-      "subjectPattern": ".+",
-      "subjectPatternErrorMsg": "subject does not match subject pattern!",
-      "helpMessage": "",
-      "autoFix": false
+    "ghooks": {
+      "commit-msg": "./validate-commit-msg.js"
     }
   },
   "homepage": "https://github.com/Asarua/request#readme",

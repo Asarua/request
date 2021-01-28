@@ -25,10 +25,7 @@
   "config": {
     "ghooks": {
       "commit-msg": "validate-commit-msg",
-      "post-commit": [
-        "npm run shift-commit-message",
-        "git add"
-      ]
+      "post-commit": "npm run shift-commit-message && git add"
     },
     "validate-commit-msg": {
       "types": [

@@ -22,7 +22,6 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "./aaa.js",
       "commit-msg": "validate-commit-msg"
     },
     "validate-commit-msg": {
